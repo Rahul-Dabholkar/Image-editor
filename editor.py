@@ -2,6 +2,10 @@ import streamlit as st
 from PIL import Image
 from PIL.ImageFilter import *
 
+st.set_page_config(page_title = 'Image Editor', 
+                   page_icon='✏️',
+                   layout='wide')
+
 st.markdown('<h1 style ="text-align:center;">Image Editor</h1>',unsafe_allow_html=True)
 st.markdown('---')
 image = st.file_uploader('Upload your Image',type=['jpg','png','jpeg'])
